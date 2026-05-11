@@ -474,7 +474,7 @@ def main():
                 st.download_button(
                     label="📓 Descargar Notebook .ipynb",
                     data=notebook_bytes,
-                    file_name="Code_Heart_Failure.ipynb",
+                    file_name="Insuficiencia_Cardiaca_Code.ipynb",
                     mime="application/x-ipynb+json",
                 )
             except FileNotFoundError:
