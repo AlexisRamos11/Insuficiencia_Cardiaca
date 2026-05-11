@@ -10,7 +10,6 @@ Aplicación Streamlit para explorar el dataset de **Heart Failure Clinical Recor
 ## Estructura
 
 - `streamlit_main.py`: aplicación interactiva (flujo completo del análisis).
-- `main.py`: versión previa/simplificada de la app.
 - `heart_failure_clinical_records_dataset.csv`: dataset usado en el análisis.
 - `Proyecto Final.pdf`: reporte detallado para descarga desde la app.
 - `Proyecto Final.ipynb`: notebook original para descarga desde la app.
@@ -33,13 +32,3 @@ streamlit run streamlit_main.py
 7) **Modelos**: selección de variables (SelectKBest), métricas de validación cruzada y nota sobre hiperparámetros.
 8) **Resultados del modelo**: reporte de clasificación, ROC AUC y curva ROC del Random Forest.
 9) **Recursos y Descargas**: botones para descargar el PDF y el notebook.
-
-## Caché y rendimiento
-
-- `@st.cache_data` para carga de datos, ingeniería de variables y lectura de archivos descargables.
-- `@st.cache_resource` para ejecutar y reutilizar todo el pipeline de modelado (reduce tiempo de espera en la UI).
-
-## Notas
-
-- La app usa el dataset provisto; asegúrate de mantener el archivo CSV en la misma carpeta.
-- Los botones de descarga esperan los archivos `Proyecto Final.pdf` y `Proyecto Final.ipynb` en el directorio raíz del repo.
